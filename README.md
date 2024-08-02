@@ -2,25 +2,25 @@
   <img src="example_output.png" alt="Banner" width="80%" />
 </p>
 
-# Themer: 
+# Themer:
+
 A Color Palette Generator that regexes colours out of text files.
 
 Themer is a Rust command-line tool designed to extract hexadecimal color codes from input files.
 
-
-
 ## Features:
 
-    Extract Color Codes: Scans any text file for hexadecimal color codes.
-    Generate Image Palette: Creates an image file with a visual representation of the colors.
-    Color Classification: Identifies and labels colors based on their dominant RGB component.
-    Flexible Input: Accepts any file containing hex codes scattered within text.
+- Extract Color Codes: Scans any text file for hexadecimal color codes.
+- Generate Image Palette: Creates an image file with a visual representation of the colors.
+- Flexible Input: Accepts any file containing hex codes scattered within text.
 
 ## Installation
 
 To install Themer, you need Rust's cargo tool installed on your machine. Follow these steps:
 
-    Clone the repository:
+```
+Clone the repository:
+```
 
 ```bash
 
@@ -36,7 +36,9 @@ cd themer
 cargo build --release
 
 ```
+
 ## Usage:
+
 To use Themer, provide the path to a text file as an argument:
 
 ```bash
@@ -44,6 +46,7 @@ To use Themer, provide the path to a text file as an argument:
 themer "/home/jer/.vscode/extensions/alexandernanberg.horizon-theme-vscode-1.0.1/themes/horizon.json"
 
 ```
+
 then checkout the `horizon.png`
 
 # License
