@@ -6,7 +6,6 @@ use regex::Regex;
 use std::collections::HashSet;
 use std::env;
 use std::path::PathBuf;
-use std::str::FromStr;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -29,7 +28,7 @@ fn main() {
     let image_size = 600_i32 + 2 * border;
 
     let font_data: &'static [u8] = include_bytes!("../FiraMono-Medium.ttf") as &[u8];
-    let font = FontRef::try_from_slice(&font_data).unwrap();
+    let font = FontRef::try_from_slice(font_data).unwrap();
 
     let scale = ab_glyph::PxScale { x: 16.0, y: 16.0 };
 
@@ -45,7 +44,6 @@ fn main() {
         .map(|cap| cap[0].to_string())
         .collect::<HashSet<String>>()
         .into_iter()
-        .map(|v| v)
         .collect::<Vec<String>>();
     colours.sort();
 
@@ -62,7 +60,7 @@ fn main() {
             &mut img,
             Rgba([0, 0, 0, 255]),
             x,
-            y + square_size as i32,
+            y + square_size,
             scale,
             &font,
             &color[1..],
