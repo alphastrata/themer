@@ -18,21 +18,12 @@ Themer is a Rust command-line tool designed to extract hexadecimal color codes f
 
 To install Themer, you need Rust's cargo tool installed on your machine. Follow these steps:
 
-```
-Clone the repository:
-```
-
+### Clone the repository & build:
+ 
 ```bash
 
-git clone https://github.com/yourusername/themer.git
+git clone https://github.com/alphastrata/themer
 cd themer
-
-```
-
-## Build the project:
-
-```bash
-
 cargo build --release
 
 ```
