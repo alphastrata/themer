@@ -1,0 +1,11 @@
+[package]
+name = "themer"
+version = "0.1.0"
+edition = "2021"
+description = "Extracts all hexadecimal color codes from a given input and generates a visual palette image (palette.png), displaying each color with its corresponding hex code."
+
+[dependencies]
+ab_glyph = "0.2.28"
+image = "0.25.2"
+imageproc = "0.25.0"
+regex = "1.10.5"
