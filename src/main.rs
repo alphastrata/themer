@@ -1,11 +1,11 @@
 use ab_glyph::FontRef;
 use image::{ImageBuffer, Rgba};
-use imageproc::drawing::{draw_filled_rect_mut, draw_text_mut};
-use imageproc::rect::Rect;
+use imageproc::{
+    drawing::{draw_filled_rect_mut, draw_text_mut},
+    rect::Rect,
+};
 use regex::Regex;
-use std::collections::HashSet;
-use std::env;
-use std::path::PathBuf;
+use std::{collections::HashSet, env, path::PathBuf};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
