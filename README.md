@@ -34,9 +34,12 @@ To use Themer, provide the path to a text file as an argument:
 
 ```bash
 
-themer "/home/jer/.vscode/extensions/alexandernanberg.horizon-theme-vscode-1.0.1/themes/horizon.json"
+themer "~/.vscode/extensions/alexandernanberg.horizon-theme-vscode-1.0.1/themes/horizon.json"
 
 ```
+
+## Why?
+I needed something that could programmatically get the colours out from misc IDE and text-editors' themes to more readily craft my own.
 
 then checkout the `horizon.png`
 
