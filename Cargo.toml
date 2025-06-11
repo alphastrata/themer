@@ -1,7 +1,7 @@
 [package]
 name = "themer"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 description = "Extracts all hexadecimal color codes from a given input and generates a visual palette image (palette.png), displaying each color with its corresponding hex code."
 repository = "www.github.com/alphastrata/themer"
 keywords = [ "color", "hex", "color-picker", "picker" ]
